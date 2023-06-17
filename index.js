@@ -34,7 +34,7 @@ app.post('/submit', async (req, res) => {
       username,
       password
     });
-   
+    console.log(newData);
       await newData.save();
       res.sendFile(__dirname + '/home.html');
   });
